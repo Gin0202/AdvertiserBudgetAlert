@@ -15,7 +15,6 @@ def get_json_data(advertiser_name, max_retries=5, backoff_factor=0.5):
     api_url = config['request_url']
     top_key = config['top_key']
 
-    # 定义动态字段
     daily_cap_column = config.get('daily_cap', 'daily_cap')
     click_cap_column = config.get('click_cap', 'click_cap')
     payout_column = config.get('payout', 'payout')
@@ -34,7 +33,7 @@ def get_json_data(advertiser_name, max_retries=5, backoff_factor=0.5):
 
             return campaigns
         except requests.RequestException as e:
-            print(f"请求失败，状态码：{e.response.status_code if e.response else '无'}，重试次数：{retries + 1}")
+            print(f"Request fail，code：{e.response.status_code if e.response else '无'}，retries：{retries + 1}")
             retries += 1
             time.sleep(backoff_factor * (2 ** retries))
 
