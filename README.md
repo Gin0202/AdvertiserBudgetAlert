@@ -57,10 +57,10 @@ Contributions to this project are welcome. Please ensure to follow the code styl
 
 ## License
 ## 许可证
-[Specify License]
-[指定许可证]
+This project is licensed under the MIT License - see the LICENSE file for details.
+本项目采用 MIT 许可证 - 详情请见 LICENSE 文件。
 
 ## Contact
 ## 联系方式
-For any queries or assistance, feel free to contact [Your Contact Information].
-如有任何疑问或需要协助，请随时联系[您的联系信息]。
+For any queries or assistance, feel free to contact.
+如有任何疑问或需要协助，请随时联系。
