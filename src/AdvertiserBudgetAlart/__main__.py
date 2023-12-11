@@ -1,7 +1,7 @@
 # __main__.py
 
 from CampaignDataSync import check_for_changes
-from SendFeishuMessage import LarkNotifier
+from SendLarkMessage import LarkNotifier
 from .Settings.config import keys
 
 
