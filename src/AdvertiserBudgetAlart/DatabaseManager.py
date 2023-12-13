@@ -33,7 +33,7 @@ def get_json_data(advertiser_name, max_retries=5, backoff_factor=0.5):
 
             return campaigns
         except requests.RequestException as e:
-            print(f"Request fail，code：{e.response.status_code if e.response else '无'}，retries：{retries + 1}")
+            print(f"Request fail，code：{e.response.status_code if e.response else 'None'}，retries：{retries + 1}")
             retries += 1
             time.sleep(backoff_factor * (2 ** retries))
 

@@ -36,7 +36,7 @@ Make sure to set your environment variables for `APP_ID` and `APP_SECRET`. These
 Each script in the project can be run independently for testing purposes, as they contain their own `if __name__ == "__main__":` section. To run the entire system, use the main entry point script:
 项目中的每个脚本都可以独立运行以进行测试，因为它们包含自己的 `if __name__ == "__main__":` 部分。要运行整个系统，请使用主入口脚本：
 ```
-python [main script name]
+python __main__.py
 ```
 This will start the process of data synchronization and alerting for all configured advertisers.
 这将启动所有配置的广告主的数据同步和提醒过程。
